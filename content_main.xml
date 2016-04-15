@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.something.myfirstapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topText"
+        android:text="0.0"
+        android:gravity="right"
+        android:textSize="50dp"
+        android:background="@color/greyBackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:id="@+id/buttonPI"
+            android:onClick="clickedPI"
+            android:text="PI"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonSquare"
+            android:onClick="clickedSquare"
+            android:layout_weight="5"
+            android:text="x^2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/clickedCubed"
+            android:onClick="clickedCubed"
+            android:layout_weight="5"
+            android:text="x^3"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:id="@+id/buttonFactorial"
+            android:onClick="clickedFactorial"
+            android:text="n!"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_marginRight="10dp"
+            android:id="@+id/buttonRoot"
+            android:onClick="clickedRoot"
+            android:text="√"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/button7"
+            android:onClick="clickedSeven"
+            android:text="7"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/button8"
+            android:onClick="clickedEight"
+            android:text="8"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/button9"
+            android:onClick="clickedNine"
+            android:text="9" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/buttonAC"
+            android:onClick="clickedAC"
+            android:text="AC"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/button4"
+            android:onClick="clickedFour"
+            android:text="4"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/button5"
+            android:onClick="clickedFive"
+            android:text="5"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/button6"
+            android:onClick="clickedSix"
+            android:text="6" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="4"
+            android:layout_marginRight="10dp"
+            android:id="@+id/buttonDiv"
+            android:onClick="clickedDiv"
+            android:text="/"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/button1"
+            android:onClick="clickedOne"
+            android:text="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/button2"
+            android:onClick="clickedTwo"
+            android:text="2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/button3"
+            android:onClick="clickedThree"
+            android:text="3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="4"
+            android:layout_marginRight="10dp"
+            android:id="@+id/buttonMul"
+            android:onClick="clickedMul"
+            android:text="*"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/button0"
+            android:onClick="clickedZero"
+            android:text="0"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="4"
+            android:layout_marginRight="10dp"
+            android:id="@+id/buttonEqu"
+            android:onClick="clickedEqu"
+            android:text="="/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:id="@+id/buttonAdd"
+            android:onClick="clickedAdd"
+            android:text="+"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="4"
+            android:layout_marginRight="10dp"
+            android:id="@+id/buttonMin"
+            android:onClick="clickedMin"
+            android:text="-"/>
+    </LinearLayout>
+</LinearLayout>
